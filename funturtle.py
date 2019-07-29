@@ -39,5 +39,24 @@ sam.color('blue')
 sam.shape('arrow')
 sam.goto(100,0)
 def up():
+    sam.setheading(90)
+    sam.forward(50)
+sam.onkeypress(up,'w')
+def down():
+    sam.setheading(180)
+    sam.forward(50)
+sam.onkeypress(down,'s')
+def left():
+    sam.setheadling(270)
+    sam.left(50)
+sam.onkeypress(left,'a')
+def right():
+    sam.setheading(90)
+    sam.right(50)
+sam.onkeypress(right,'d')
+sam.listen()
+
+
+    
     
 
